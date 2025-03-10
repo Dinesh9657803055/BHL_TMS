@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyTest(failed)">
+    <classes>
+      <class name="com.BHL.TC002_DashboardPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="TC007_Verify_Trip_Alert"/>
+          <include name="tearDown"/>
+          <include name="TC003_VerifyUSerDatabasesListing"/>
+          <include name="TC006_Verify_Module_Approval"/>
+          <include name="TC005_Verify_DB_Approval"/>
+          <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="afterSuite"/>
+          <include name="TC008_Verify_Report"/>
+          <include name="beforeSuitMethod"/>
+          <include name="TC001_VerifySideBarMenuList"/>
+          <include name="TC004_VerifyDatabasesListing"/>
+          <include name="beforeMethod"/>
+          <include name="TC002_VerifyUserGroupList"/>
+        </methods>
+      </class> <!-- com.BHL.TC002_DashboardPageTest -->
+    </classes>
+  </test> <!-- MyTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

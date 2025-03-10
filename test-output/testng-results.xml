@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-03T12:11:47 IST" name="Default suite" finished-at="2025-03-03T12:12:14 IST" duration-ms="27276">
+    <groups>
+    </groups>
+    <test started-at="2025-03-03T12:11:47 IST" name="Default test" finished-at="2025-03-03T12:12:14 IST" duration-ms="27276">
+      <class name="com.BHL.TC001_LoginPageTest">
+        <test-method is-config="true" signature="beforeSuitMethod()[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:47 IST" name="beforeSuitMethod" finished-at="2025-03-03T12:11:47 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuitMethod -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:47 IST" name="beforeTest" finished-at="2025-03-03T12:11:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:47 IST" name="setup" finished-at="2025-03-03T12:11:58 IST" duration-ms="11258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:58 IST" name="setUp" finished-at="2025-03-03T12:11:58 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:58 IST" name="beforeMethod" finished-at="2025-03-03T12:11:58 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_001_verify_WelcomeText_On_LoginPage()[pri:1, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_001_verify_WelcomeText_On_LoginPage()[pri:1, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:58 IST" name="TC_001_verify_WelcomeText_On_LoginPage" finished-at="2025-03-03T12:11:58 IST" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_001_verify_WelcomeText_On_LoginPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:58 IST" name="tearDown" finished-at="2025-03-03T12:11:58 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_001_verify_WelcomeText_On_LoginPage status=SUCCESS method=TC001_LoginPageTest.TC_001_verify_WelcomeText_On_LoginPage()[pri:1, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:58 IST" name="beforeMethod" finished-at="2025-03-03T12:11:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_002_verify_Login_Button_Clickable()[pri:2, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_002_verify_Login_Button_Clickable()[pri:2, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:11:58 IST" name="TC_002_verify_Login_Button_Clickable" finished-at="2025-03-03T12:12:00 IST" duration-ms="1648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_002_verify_Login_Button_Clickable -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="tearDown" finished-at="2025-03-03T12:12:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_002_verify_Login_Button_Clickable status=SUCCESS method=TC001_LoginPageTest.TC_002_verify_Login_Button_Clickable()[pri:2, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC003_verify_ErrorMessageForEmailField()[pri:3, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="TC003_verify_ErrorMessageForEmailField" finished-at="2025-03-03T12:12:00 IST" duration-ms="591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003_verify_ErrorMessageForEmailField -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="beforeMethod" finished-at="2025-03-03T12:12:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC003_verify_ErrorMessageForEmailField()[pri:3, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="tearDown" finished-at="2025-03-03T12:12:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003_verify_ErrorMessageForEmailField status=SUCCESS method=TC001_LoginPageTest.TC003_verify_ErrorMessageForEmailField()[pri:3, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="beforeMethod" finished-at="2025-03-03T12:12:00 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC004_verify_ErrorMessageForPasswordField()[pri:4, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC004_verify_ErrorMessageForPasswordField()[pri:4, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="TC004_verify_ErrorMessageForPasswordField" finished-at="2025-03-03T12:12:00 IST" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004_verify_ErrorMessageForPasswordField -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="tearDown" finished-at="2025-03-03T12:12:00 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC004_verify_ErrorMessageForPasswordField status=SUCCESS method=TC001_LoginPageTest.TC004_verify_ErrorMessageForPasswordField()[pri:4, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC_005_verify_Login()[pri:5, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="TC_005_verify_Login" finished-at="2025-03-03T12:12:06 IST" duration-ms="5846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005_verify_Login -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:00 IST" name="beforeMethod" finished-at="2025-03-03T12:12:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_005_verify_Login()[pri:5, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:06 IST" name="tearDown" finished-at="2025-03-03T12:12:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_005_verify_Login status=SUCCESS method=TC001_LoginPageTest.TC_005_verify_Login()[pri:5, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:06 IST" name="beforeMethod" finished-at="2025-03-03T12:12:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_006_LogoutFlow()[pri:6, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_006_LogoutFlow()[pri:6, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:06 IST" name="TC_006_LogoutFlow" finished-at="2025-03-03T12:12:10 IST" duration-ms="3533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_006_LogoutFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:10 IST" name="tearDown" finished-at="2025-03-03T12:12:10 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_006_LogoutFlow status=SUCCESS method=TC001_LoginPageTest.TC_006_LogoutFlow()[pri:6, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="TC_007_reloginToBHL()[pri:7, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:10 IST" name="TC_007_reloginToBHL" finished-at="2025-03-03T12:12:14 IST" duration-ms="3949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_007_reloginToBHL -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:10 IST" name="beforeMethod" finished-at="2025-03-03T12:12:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_007_reloginToBHL()[pri:7, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:14 IST" name="tearDown" finished-at="2025-03-03T12:12:14 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_007_reloginToBHL status=SUCCESS method=TC001_LoginPageTest.TC_007_reloginToBHL()[pri:7, instance:com.BHL.TC001_LoginPageTest@49e53c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.BHL.TC001_LoginPageTest@49e53c76]" started-at="2025-03-03T12:12:14 IST" name="afterSuite" finished-at="2025-03-03T12:12:14 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.BHL.TC001_LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
