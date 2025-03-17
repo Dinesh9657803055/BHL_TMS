@@ -112,6 +112,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		Expected_Moudle_Approval_List.add("Deactivate Trips");
 		Expected_Moudle_Approval_List.add("Refueling Log");
 		Expected_Moudle_Approval_List.add("POD Documents");
+		System.out.println("test");
 		return Expected_Moudle_Approval_List;
 	}
 
