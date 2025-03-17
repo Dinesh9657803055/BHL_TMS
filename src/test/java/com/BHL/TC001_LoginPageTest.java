@@ -45,8 +45,6 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		String normalizedActual = ActualText.replace("\r\n", "\n");
 
 		// Now compare the normalized text
-		// Now compare the normalized text
-		// Now compare the normalized text
 		Assert.assertEquals(normalizedActual, normalizedExpected, "Welcome text is incorrect");
 	//	ExtentManager.onTestPass("Verified Welcome text is Correct");
 	}
