@@ -113,6 +113,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		Expected_Moudle_Approval_List.add("Refueling Log");
 		Expected_Moudle_Approval_List.add("POD Documents");
 		System.out.println("Test");
+		System.out.println("Test");
 		return Expected_Moudle_Approval_List;
 	}
 
