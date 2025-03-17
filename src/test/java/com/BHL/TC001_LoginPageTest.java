@@ -60,6 +60,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		// Now compare the normalized text
 		Assert.assertEquals(ActualText, ExpectedText, "Welcome text is incorrect");
 	//	ExtentManager.onTestPass("Verified LoginScreen text is Correct");
+		//syso
 		//	ExtentManager.onTestPass("Verified LoginScreen text is Correct");
 	}
 
