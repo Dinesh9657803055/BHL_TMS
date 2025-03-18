@@ -18,6 +18,7 @@ public class SideBarMenu extends BaseClass {
 	@FindBy(xpath = "//div[text()=\"User Databases\"]") private WebElement UserDataBases;
 	@FindBy(xpath = "//div[@class=\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr\"]//div[@class=\"MuiListItemText-root css-1tsvksn\"]") private List<WebElement> UserDataBaseListing;
 	@FindBy(xpath = "//div[text()=\"Completed Trips\"]") private WebElement CompletedTripText;
+	@FindBy(xpath = "//div[text()='Vehicles']") private WebElement VehiclesText;
 	@FindBy(xpath = "//div[text()=\"DB approvals\"]") private WebElement DB_Approval;
 	@FindBy(xpath = "//div[@class=\"MuiCollapse-wrapper MuiCollapse-vertical css-hboir5\"]//div[@class=\"MuiListItemText-root css-1tsvksn\"]") private List<WebElement> DB_ApprovalListing;
 	@FindBy(xpath = "//div[text()=\"Module approvals\"]") private WebElement ModuleApproval;
@@ -59,6 +60,7 @@ public class SideBarMenu extends BaseClass {
 	//verify the User Databases Drop down Listing which have 4 Options 
 	public  List<String> VerifyUserDatabasesListing() throws InterruptedException {
 		List<String> UserDatabasesText = new ArrayList<String>();
+		Thread.sleep(2000);
 		ReusableMethods.explicitWait(UserDataBases);
 		UserDataBases.click();
 		Thread.sleep(3000);
@@ -76,7 +78,7 @@ public class SideBarMenu extends BaseClass {
 		ReusableMethods.explicitWait(DatabasesDropdown);
 		Thread.sleep(2000);
 		DatabasesDropdown.click();
-		ReusableMethods.scrollDown(CompletedTripText);
+		ReusableMethods.scrollDown(VehiclesText);
 		Thread.sleep(4000);		
 		List<WebElement> DatabaseElement = DatabasesListing;
 		for(WebElement ele : DatabaseElement) {

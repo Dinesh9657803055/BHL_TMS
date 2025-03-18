@@ -1,6 +1,8 @@
 package pom_Pages;
 
 
+import java.util.NoSuchElementException;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -26,6 +28,30 @@ public class login_Page extends BaseClass {
 	@FindBy(xpath = "//div[@class=\"MuiBox-root css-ou2fs7\"]//following::button")private WebElement ClickLoginButtonAfterLogout;
 	@FindBy(xpath = "//p[text()=\"Email is required\"]") private WebElement ErrorMessageEmail;
 	@FindBy(xpath = "//p[text()=\"Password is required\"]") private WebElement ErrorMessagePassword;
+	
+	
+	
+	public boolean isUserLoggedIn() {
+        try {
+            // Check for an element that is visible only after login
+           
+            return LogoutButton.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+	
+	public void loginIfRequired(String email_Id, String password) {
+        if (!isUserLoggedIn()) {
+            System.out.println("User is not logged in. Performing login...");
+            Email_Id.sendKeys(email_Id);
+            Password.sendKeys(password);
+            ClickLoginButton.click();
+        } else {
+            System.out.println("User is already logged in. Skipping login.");
+        }
+    }
+	
 
 	public login_Page() {
 		PageFactory.initElements(driver, this);	 

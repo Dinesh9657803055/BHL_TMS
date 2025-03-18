@@ -11,27 +11,32 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pom_Pages.SideBarMenu;
+import pom_Pages.login_Page;
 import report.ExtentManager;
 
 @Listeners(ExtentManager.class)
 public class TC002_DashboardPageTest extends BeforeAfterMethods {
-	
-	
+	login_Page login;
+
 	SideBarMenu Side;
 	@BeforeClass
 	public void setUp() {		
 		Side = new SideBarMenu();
+		login = new login_Page();
+		/*login.isUserLoggedIn();
+		login.loginIfRequired("chitra@mailinator.com", "Test@123");*/
 	}
 
 	//@BeforeMethod
 	public void assertion() {
-	//	soft = new SoftAssert();
+		//	soft = new SoftAssert();
 	}
 
 	//@AfterClass
 	public void assertionAll() {
-	//	soft.assertAll();
+		//	soft.assertAll();
 	}
+
 	// Arraylist for Expected Side Bar Menu List 
 	public static List<String> ExpectedSideBarMenuListText (){
 		List<String> ExpectedSideBarMenuList = new ArrayList<String>();
@@ -65,41 +70,42 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	}
 
 	// Arraylist for Expected  Databases List  
+
 	public static List<String> ExpectedDatabasesText() {
 		List<String> ExpectedDatabasesList = new ArrayList<String>();
-		ExpectedDatabasesList.add("Drivers");
-		ExpectedDatabasesList.add("Countries");
-		ExpectedDatabasesList.add("BHL Companies");
-		ExpectedDatabasesList.add("Contracts");
-		ExpectedDatabasesList.add("Orders");
-		ExpectedDatabasesList.add("SubContractors");
-		ExpectedDatabasesList.add("Fleets");
-		ExpectedDatabasesList.add("Vehicles");
-		ExpectedDatabasesList.add("Vehicle Models");
-		ExpectedDatabasesList.add("Container Models");
-		ExpectedDatabasesList.add("Trailers");
-		ExpectedDatabasesList.add("Trailer Models");
-		ExpectedDatabasesList.add("Materials");
-		ExpectedDatabasesList.add("Buckets");
-		ExpectedDatabasesList.add("Customers");
-		ExpectedDatabasesList.add("Fuel Stations");
-		ExpectedDatabasesList.add("Refueling Logs");
-		ExpectedDatabasesList.add("Routes");
-		ExpectedDatabasesList.add("Rest Points");
-		ExpectedDatabasesList.add("Currency");
-		ExpectedDatabasesList.add("Planned Trips");
 		ExpectedDatabasesList.add("Active Trips");
+		ExpectedDatabasesList.add("BHL Companies");
+		ExpectedDatabasesList.add("Buckets");
 		ExpectedDatabasesList.add("Completed Trips");
+		ExpectedDatabasesList.add("Container Models");
+		ExpectedDatabasesList.add("Contracts");
+		ExpectedDatabasesList.add("Countries");
+		ExpectedDatabasesList.add("Currency");	
+		ExpectedDatabasesList.add("Customers");
+		ExpectedDatabasesList.add("Drivers");
+		ExpectedDatabasesList.add("Fleets");
+		ExpectedDatabasesList.add("Fuel Stations");
+		ExpectedDatabasesList.add("Materials");
+		ExpectedDatabasesList.add("Orders");
+		ExpectedDatabasesList.add("Planned Trips");
+		ExpectedDatabasesList.add("Refueling Logs");
+		ExpectedDatabasesList.add("Rest Points");
+		ExpectedDatabasesList.add("Routes");	
+		ExpectedDatabasesList.add("SubContractors");
+		ExpectedDatabasesList.add("Trailer Models");
+		ExpectedDatabasesList.add("Trailers");
+		ExpectedDatabasesList.add("Vehicle Models");
+		ExpectedDatabasesList.add("Vehicles");
 		return ExpectedDatabasesList;
 	}
 
 	// Arraylist for Expected User Databases List 
 	public static List<String> ExpectedDB_Approvals_Text() {
 		List<String> ExpectedDB_Approval_List = new ArrayList<String>();
-		ExpectedDB_Approval_List.add("Vehicles");
-		ExpectedDB_Approval_List.add("Trailers");
-		ExpectedDB_Approval_List.add("Drivers");
 		ExpectedDB_Approval_List.add("Customers");
+		ExpectedDB_Approval_List.add("Drivers");
+		ExpectedDB_Approval_List.add("Trailers");
+		ExpectedDB_Approval_List.add("Vehicles");	
 		return ExpectedDB_Approval_List;
 	}
 
@@ -108,10 +114,11 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> Expected_Moudle_Approval_List =new ArrayList<String>();
 		Expected_Moudle_Approval_List.add("Activate Trips");
 		Expected_Moudle_Approval_List.add("Complete Trips");
-		Expected_Moudle_Approval_List.add("Reactivate Trips");
 		Expected_Moudle_Approval_List.add("Deactivate Trips");
-		Expected_Moudle_Approval_List.add("Refueling Log");
 		Expected_Moudle_Approval_List.add("POD Documents");
+		Expected_Moudle_Approval_List.add("Reactivate Trips");	
+		Expected_Moudle_Approval_List.add("Refueling Log");
+	
 		System.out.println("Test");
 		System.out.println("Test");
 		return Expected_Moudle_Approval_List;
@@ -124,11 +131,12 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	}
 
 	public static List<String> Expected_ReportListing_Text() {
-		List<String> ExpectedReportListing = new ArrayList<String>();
-		ExpectedReportListing.add("Trip Reports");
-		ExpectedReportListing.add("Refueling Reports");
+		List<String> ExpectedReportListing = new ArrayList<String>();		
 		ExpectedReportListing.add("Assets Reports");
 		ExpectedReportListing.add("Compliance Reports");
+		ExpectedReportListing.add("Refueling Reports");
+		ExpectedReportListing.add("Trip Reports");
+		
 		return ExpectedReportListing;
 	}
 
@@ -149,7 +157,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> ExpectedUserGroupListing = ExpectedUserGroupListText().stream().map(String::toLowerCase).toList();		
 		Assert.assertEquals(ActualUserGroupListing, ExpectedUserGroupListing);
 		//BeforeAfterMethods.soft.assertEquals(ActualUserGroupListing, ExpectedUserGroupListing); 
-	//	ExtentManager.onTestPass("Verified Successfully - Side Menu Bar Listing");
+		//	ExtentManager.onTestPass("Verified Successfully - Side Menu Bar Listing");
 	}
 
 	@Test(priority = 3)
@@ -157,7 +165,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> ActualListUserDatabases = Side.VerifyUserDatabasesListing().stream().map(String::toLowerCase).toList();
 		List<String> ExpectedListUserDatabases = ExpectedUserDatabasesText().stream().map(String::toLowerCase).toList();		
 		Assert.assertEquals(ActualListUserDatabases, ExpectedListUserDatabases);
-	//	ExtentManager.onTestPass("Verified Successfully - UserDatabasesListing");
+		//	ExtentManager.onTestPass("Verified Successfully - UserDatabasesListing");
 	}
 
 	@Test(priority = 4)
@@ -165,7 +173,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> ActualDatabsesListing = Side.VerifyDatabasesListing().stream().map(String::toLowerCase).toList();
 		List<String> ExpectedDatabasesListing = ExpectedDatabasesText().stream().map(String::toLowerCase).toList();
 		Assert.assertEquals(ActualDatabsesListing, ExpectedDatabasesListing);
-	//	ExtentManager.onTestPass("Verified Successfully - Databases");
+		//	ExtentManager.onTestPass("Verified Successfully - Databases");
 	}
 
 	@Test(priority = 5)
@@ -173,7 +181,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> Expected_DB_ApprovalT_List = ExpectedDB_Approvals_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_DB_Approval_List = Side.VerifyDB_ApprovalListing().stream().map(String::toLowerCase).toList();
 		Assert.assertEquals(Actual_DB_Approval_List, Expected_DB_ApprovalT_List);
-	//	ExtentManager.onTestPass("Verified Successfully - DB Approval Listing");
+		//	ExtentManager.onTestPass("Verified Successfully - DB Approval Listing");
 	}
 
 	@Test(priority = 6)
@@ -181,7 +189,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> Expected_Module_Approval_List = Expected_Module_Approval_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_Module_Approval_List = Side.Verify_Module_Approval_Listing().stream().map(String::toLowerCase).toList();
 		Assert.assertEquals(Actual_Module_Approval_List, Expected_Module_Approval_List);
-	//	ExtentManager.onTestPass("Verified Successfully  - Module Approval Listing");
+		//	ExtentManager.onTestPass("Verified Successfully  - Module Approval Listing");
 	}
 
 	@Test(priority = 7)
@@ -189,7 +197,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> Expected_Trip_Alert = Expected_TripAlert_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_Trip_Alert =Side.Verify_AlertDasboardListing().stream().map(String::toLowerCase).toList();
 		Assert.assertEquals(Actual_Trip_Alert, Expected_Trip_Alert);
-	//	ExtentManager.onTestPass("Veridfied Successfully - Trip Alert Listing");
+		//	ExtentManager.onTestPass("Veridfied Successfully - Trip Alert Listing");
 	}
 
 	@Test(priority = 8)
@@ -197,6 +205,6 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		List<String> Expected_Report_Listing = Expected_ReportListing_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_Report_Listing =  Side.VerifyReportListing().stream().map(String::toLowerCase).toList();
 		Assert.assertEquals(Actual_Report_Listing, Expected_Report_Listing);
-	//	ExtentManager.onTestPass("Verified Report Listing - Successfully");
+		//	ExtentManager.onTestPass("Verified Report Listing - Successfully");
 	}
 }

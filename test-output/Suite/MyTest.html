@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>MyTest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/3</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 04 18:53:55 IST 2025</td>
+<td>Started on:</td><td>Tue Mar 18 12:14:02 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55954 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41322 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,88 +67,349 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.BHL.TC001_LoginPageTest.TC_002_verify_Login_Button_Clickable()'><b>TC_002_verify_Login_Button_Clickable</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
-<td></td>
-<td>1</td>
-<td>com.BHL.TC001_LoginPageTest@5c6648b0</td></tr>
+<td title='com.BHL.TC002_DashboardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.BHL.TC002_DashboardPageTest<br>Parameters: [TestResult name=TC005_Verify_DB_Approval status=FAILURE method=TC002_DashboardPageTest.TC005_Verify_DB_Approval()[pri:5, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace579660439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace579660439'><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC004_VerifyDatabasesListing()'><b>TC004_VerifyDatabasesListing</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td title='com.BHL.TC002_DashboardPageTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
 <td></td>
-<td>7</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.beforeMethod()'><b>beforeMethod</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.tearDown()'><b>tearDown</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.TC005_Verify_DB_Approval()'><b>TC005_Verify_DB_Approval</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at com.BHL.TC002_DashboardPageTest.TC005_Verify_DB_Approval(TC002_DashboardPageTest.java:181)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace504634946", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace504634946'><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:1656)
+	at org.testng.Assert.assertEquals(Assert.java:1618)
+	at com.BHL.TC002_DashboardPageTest.TC005_Verify_DB_Approval(TC002_DashboardPageTest.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>4</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='com.BHL.TC001_LoginPageTest.TC_007_reloginToBHL()'><b>TC_007_reloginToBHL</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
 <td></td>
 <td>4</td>
-<td>com.BHL.TC001_LoginPageTest@5c6648b0</td></tr>
+<td>com.BHL.TC001_LoginPageTest@d21a74c</td></tr>
 <tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC006_Verify_Module_Approval()'><b>TC006_Verify_Module_Approval</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td title='com.BHL.TC002_DashboardPageTest.TC003_VerifyUSerDatabasesListing()'><b>TC003_VerifyUSerDatabasesListing</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
 <td></td>
-<td>4</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
+<td>5</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
 <tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC008_Verify_Report()'><b>TC008_Verify_Report</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td title='com.BHL.TC001_LoginPageTest.TC_002_verify_Login_Button_Clickable()'><b>TC_002_verify_Login_Button_Clickable</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
 <td></td>
-<td>4</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
-<tr>
-<td title='com.BHL.TC001_LoginPageTest.TC_006_LogoutFlow()'><b>TC_006_LogoutFlow</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.BHL.TC001_LoginPageTest@5c6648b0</td></tr>
-<tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC002_VerifyUserGroupList()'><b>TC002_VerifyUserGroupList</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
-<td></td>
-<td>2</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
+<td>1</td>
+<td>com.BHL.TC001_LoginPageTest@d21a74c</td></tr>
 <tr>
 <td title='com.BHL.TC001_LoginPageTest.TC_005_verify_Login()'><b>TC_005_verify_Login</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
 <td></td>
 <td>5</td>
-<td>com.BHL.TC001_LoginPageTest@5c6648b0</td></tr>
+<td>com.BHL.TC001_LoginPageTest@d21a74c</td></tr>
 <tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC003_VerifyUSerDatabasesListing()'><b>TC003_VerifyUSerDatabasesListing</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td title='com.BHL.TC001_LoginPageTest.TC_006_LogoutFlow()'><b>TC_006_LogoutFlow</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
 <td></td>
 <td>3</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
+<td>com.BHL.TC001_LoginPageTest@d21a74c</td></tr>
 <tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC007_Verify_Trip_Alert()'><b>TC007_Verify_Trip_Alert</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td title='com.BHL.TC002_DashboardPageTest.TC002_VerifyUserGroupList()'><b>TC002_VerifyUserGroupList</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
 <td></td>
-<td>4</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
-<tr>
-<td title='com.BHL.TC001_LoginPageTest.TC004_verify_ErrorMessageForPasswordField()'><b>TC004_verify_ErrorMessageForPasswordField</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.BHL.TC001_LoginPageTest@5c6648b0</td></tr>
-<tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC001_VerifySideBarMenuList()'><b>TC001_VerifySideBarMenuList</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
-<tr>
-<td title='com.BHL.TC002_DashboardPageTest.TC005_Verify_DB_Approval()'><b>TC005_Verify_DB_Approval</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
-<td></td>
-<td>4</td>
-<td>com.BHL.TC002_DashboardPageTest@48f2bd5b</td></tr>
-<tr>
-<td title='com.BHL.TC001_LoginPageTest.TC_001_verify_WelcomeText_On_LoginPage()'><b>TC_001_verify_WelcomeText_On_LoginPage</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.BHL.TC001_LoginPageTest@5c6648b0</td></tr>
+<td>2</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
 <tr>
 <td title='com.BHL.TC001_LoginPageTest.TC003_verify_ErrorMessageForEmailField()'><b>TC003_verify_ErrorMessageForEmailField</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.BHL.TC001_LoginPageTest@5c6648b0</td></tr>
+<td>com.BHL.TC001_LoginPageTest@d21a74c</td></tr>
+<tr>
+<td title='com.BHL.TC001_LoginPageTest.TC_001_verify_WelcomeText_On_LoginPage()'><b>TC_001_verify_WelcomeText_On_LoginPage</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC001_LoginPageTest@d21a74c</td></tr>
+<tr>
+<td title='com.BHL.TC001_LoginPageTest.TC004_verify_ErrorMessageForPasswordField()'><b>TC004_verify_ErrorMessageForPasswordField</b><br>Test class: com.BHL.TC001_LoginPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC001_LoginPageTest@d21a74c</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.TC004_VerifyDatabasesListing()'><b>TC004_VerifyDatabasesListing</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td></td>
+<td>6</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.TC001_VerifySideBarMenuList()'><b>TC001_VerifySideBarMenuList</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.TC007_Verify_Trip_Alert()'><b>TC007_Verify_Trip_Alert</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750795985", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750795985'><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.TC008_Verify_Report()'><b>TC008_Verify_Report</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1693540983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1693540983'><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
+<tr>
+<td title='com.BHL.TC002_DashboardPageTest.TC006_Verify_Module_Approval()'><b>TC006_Verify_Module_Approval</b><br>Test class: com.BHL.TC002_DashboardPageTest</td>
+<td><div><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace75480150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace75480150'><pre>java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
+	at org.testng.Assert.fail(Assert.java:111)
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.BHL.TC002_DashboardPageTest@6a2b953e</td></tr>
 </table><p>
 </body>
 </html>
