@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="11" failed="1" skipped="3">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-18T12:14:02 IST" name="Suite" finished-at="2025-03-18T12:14:43 IST" duration-ms="41322">
+  <suite started-at="2025-03-18T12:54:18 IST" name="Suite" finished-at="2025-03-18T12:55:13 IST" duration-ms="54982">
     <groups>
     </groups>
-    <test started-at="2025-03-18T12:14:02 IST" name="MyTest" finished-at="2025-03-18T12:14:43 IST" duration-ms="41322">
+    <test started-at="2025-03-18T12:54:18 IST" name="MyTest" finished-at="2025-03-18T12:55:13 IST" duration-ms="54982">
       <class name="com.BHL.TC002_DashboardPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:24 IST" name="setup" finished-at="2025-03-18T12:14:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:41 IST" name="setup" finished-at="2025-03-18T12:54:41 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:24 IST" name="setUp" finished-at="2025-03-18T12:14:24 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:41 IST" name="setUp" finished-at="2025-03-18T12:54:41 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:24 IST" name="beforeMethod" finished-at="2025-03-18T12:14:24 IST" duration-ms="1" status="PASS">
+        <test-method signature="TC001_VerifySideBarMenuList()[pri:1, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:41 IST" name="TC001_VerifySideBarMenuList" finished-at="2025-03-18T12:54:41 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_VerifySideBarMenuList -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:41 IST" name="beforeMethod" finished-at="2025-03-18T12:54:41 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +30,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC001_VerifySideBarMenuList()[pri:1, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:24 IST" name="TC001_VerifySideBarMenuList" finished-at="2025-03-18T12:14:24 IST" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC001_VerifySideBarMenuList -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:24 IST" name="tearDown" finished-at="2025-03-18T12:14:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:41 IST" name="tearDown" finished-at="2025-03-18T12:54:41 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:24 IST" name="beforeMethod" finished-at="2025-03-18T12:14:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:41 IST" name="beforeMethod" finished-at="2025-03-18T12:54:41 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC002_VerifyUserGroupList()[pri:2, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:24 IST" name="TC002_VerifyUserGroupList" finished-at="2025-03-18T12:14:26 IST" duration-ms="2242" status="PASS">
+        <test-method signature="TC002_VerifyUserGroupList()[pri:2, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:41 IST" name="TC002_VerifyUserGroupList" finished-at="2025-03-18T12:54:44 IST" duration-ms="2267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_VerifyUserGroupList -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:26 IST" name="tearDown" finished-at="2025-03-18T12:14:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:44 IST" name="tearDown" finished-at="2025-03-18T12:54:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -67,7 +67,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:26 IST" name="beforeMethod" finished-at="2025-03-18T12:14:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:44 IST" name="beforeMethod" finished-at="2025-03-18T12:54:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,11 +78,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC003_VerifyUSerDatabasesListing()[pri:3, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:26 IST" name="TC003_VerifyUSerDatabasesListing" finished-at="2025-03-18T12:14:32 IST" duration-ms="5324" status="PASS">
+        <test-method signature="TC003_VerifyUSerDatabasesListing()[pri:3, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:44 IST" name="TC003_VerifyUSerDatabasesListing" finished-at="2025-03-18T12:54:49 IST" duration-ms="5317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_VerifyUSerDatabasesListing -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:32 IST" name="tearDown" finished-at="2025-03-18T12:14:32 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:49 IST" name="tearDown" finished-at="2025-03-18T12:54:49 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:32 IST" name="beforeMethod" finished-at="2025-03-18T12:14:32 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:49 IST" name="beforeMethod" finished-at="2025-03-18T12:54:49 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,11 +104,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC004_VerifyDatabasesListing()[pri:4, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:32 IST" name="TC004_VerifyDatabasesListing" finished-at="2025-03-18T12:14:38 IST" duration-ms="6629" status="PASS">
+        <test-method signature="TC004_VerifyDatabasesListing()[pri:4, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:49 IST" name="TC004_VerifyDatabasesListing" finished-at="2025-03-18T12:54:56 IST" duration-ms="6656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_VerifyDatabasesListing -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:38 IST" name="tearDown" finished-at="2025-03-18T12:14:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:56 IST" name="tearDown" finished-at="2025-03-18T12:54:56 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,52 +119,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TC005_Verify_DB_Approval()[pri:5, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:38 IST" name="TC005_Verify_DB_Approval" finished-at="2025-03-18T12:14:43 IST" duration-ms="4361" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:1656)
-at org.testng.Assert.assertEquals(Assert.java:1618)
-at com.BHL.TC002_DashboardPageTest.TC005_Verify_DB_Approval(TC002_DashboardPageTest.java:181)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC005_Verify_DB_Approval -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:38 IST" name="beforeMethod" finished-at="2025-03-18T12:14:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:56 IST" name="beforeMethod" finished-at="2025-03-18T12:54:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -175,240 +130,118 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="tearDown" finished-at="2025-03-18T12:14:43 IST" duration-ms="1" status="FAIL">
+        <test-method signature="TC005_Verify_DB_Approval()[pri:5, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:54:56 IST" name="TC005_Verify_DB_Approval" finished-at="2025-03-18T12:55:00 IST" duration-ms="4393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005_Verify_DB_Approval -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:00 IST" name="tearDown" finished-at="2025-03-18T12:55:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC005_Verify_DB_Approval status=FAILURE method=TC002_DashboardPageTest.TC005_Verify_DB_Approval()[pri:5, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
+                <![CDATA[[TestResult name=TC005_Verify_DB_Approval status=SUCCESS method=TC002_DashboardPageTest.TC005_Verify_DB_Approval()[pri:5, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
-at org.testng.Assert.fail(Assert.java:111)
-at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="beforeMethod" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:00 IST" name="beforeMethod" finished-at="2025-03-18T12:55:00 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC006_Verify_Module_Approval()[pri:6, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC006_Verify_Module_Approval()[pri:6, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="TC006_Verify_Module_Approval" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
-at org.testng.Assert.fail(Assert.java:111)
-at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TC006_Verify_Module_Approval()[pri:6, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:00 IST" name="TC006_Verify_Module_Approval" finished-at="2025-03-18T12:55:04 IST" duration-ms="4380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC006_Verify_Module_Approval -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="tearDown" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:04 IST" name="tearDown" finished-at="2025-03-18T12:55:04 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC006_Verify_Module_Approval status=SUCCESS method=TC002_DashboardPageTest.TC006_Verify_Module_Approval()[pri:6, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="beforeMethod" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:04 IST" name="beforeMethod" finished-at="2025-03-18T12:55:04 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC007_Verify_Trip_Alert()[pri:7, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC007_Verify_Trip_Alert()[pri:7, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="TC007_Verify_Trip_Alert" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
-at org.testng.Assert.fail(Assert.java:111)
-at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TC007_Verify_Trip_Alert()[pri:7, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:04 IST" name="TC007_Verify_Trip_Alert" finished-at="2025-03-18T12:55:09 IST" duration-ms="4298" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC007_Verify_Trip_Alert -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="tearDown" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:09 IST" name="tearDown" finished-at="2025-03-18T12:55:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC007_Verify_Trip_Alert status=SUCCESS method=TC002_DashboardPageTest.TC007_Verify_Trip_Alert()[pri:7, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="beforeMethod" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:09 IST" name="beforeMethod" finished-at="2025-03-18T12:55:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC008_Verify_Report()[pri:8, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC008_Verify_Report()[pri:8, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="TC008_Verify_Report" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Lists differ at element [0]: vehicles != customers expected [vehicles] but found [customers]
-at org.testng.Assert.fail(Assert.java:111)
-at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
-at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:781)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TC008_Verify_Report()[pri:8, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:09 IST" name="TC008_Verify_Report" finished-at="2025-03-18T12:55:13 IST" duration-ms="4416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC008_Verify_Report -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:14:43 IST" name="tearDown" finished-at="2025-03-18T12:14:43 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC002_DashboardPageTest@6a2b953e]" started-at="2025-03-18T12:55:13 IST" name="tearDown" finished-at="2025-03-18T12:55:13 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC008_Verify_Report status=SUCCESS method=TC002_DashboardPageTest.TC008_Verify_Report()[pri:8, instance:com.BHL.TC002_DashboardPageTest@6a2b953e] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.BHL.TC002_DashboardPageTest -->
       <class name="com.BHL.TC001_LoginPageTest">
-        <test-method is-config="true" signature="beforeSuitMethod()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:02 IST" name="beforeSuitMethod" finished-at="2025-03-18T12:14:02 IST" duration-ms="18" status="PASS">
+        <test-method is-config="true" signature="beforeSuitMethod()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:18 IST" name="beforeSuitMethod" finished-at="2025-03-18T12:54:18 IST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuitMethod -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:02 IST" name="beforeTest" finished-at="2025-03-18T12:14:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:19 IST" name="beforeTest" finished-at="2025-03-18T12:54:19 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:02 IST" name="setup" finished-at="2025-03-18T12:14:09 IST" duration-ms="6564" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:19 IST" name="setup" finished-at="2025-03-18T12:54:26 IST" duration-ms="7779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:09 IST" name="setUp" finished-at="2025-03-18T12:14:09 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:26 IST" name="setUp" finished-at="2025-03-18T12:54:26 IST" duration-ms="55" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:09 IST" name="beforeMethod" finished-at="2025-03-18T12:14:09 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:26 IST" name="beforeMethod" finished-at="2025-03-18T12:54:26 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -419,11 +252,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_001_verify_WelcomeText_On_LoginPage()[pri:1, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:09 IST" name="TC_001_verify_WelcomeText_On_LoginPage" finished-at="2025-03-18T12:14:09 IST" duration-ms="96" status="PASS">
+        <test-method signature="TC_001_verify_WelcomeText_On_LoginPage()[pri:1, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:26 IST" name="TC_001_verify_WelcomeText_On_LoginPage" finished-at="2025-03-18T12:54:27 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_001_verify_WelcomeText_On_LoginPage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:09 IST" name="tearDown" finished-at="2025-03-18T12:14:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:27 IST" name="tearDown" finished-at="2025-03-18T12:54:27 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -434,7 +267,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:09 IST" name="beforeMethod" finished-at="2025-03-18T12:14:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:27 IST" name="beforeMethod" finished-at="2025-03-18T12:54:27 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -445,11 +278,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_002_verify_Login_Button_Clickable()[pri:2, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:09 IST" name="TC_002_verify_Login_Button_Clickable" finished-at="2025-03-18T12:14:10 IST" duration-ms="1396" status="PASS">
+        <test-method signature="TC_002_verify_Login_Button_Clickable()[pri:2, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:27 IST" name="TC_002_verify_Login_Button_Clickable" finished-at="2025-03-18T12:54:28 IST" duration-ms="1360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_002_verify_Login_Button_Clickable -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:10 IST" name="tearDown" finished-at="2025-03-18T12:14:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="tearDown" finished-at="2025-03-18T12:54:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -460,7 +293,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:10 IST" name="beforeMethod" finished-at="2025-03-18T12:14:10 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="beforeMethod" finished-at="2025-03-18T12:54:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -471,11 +304,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC003_verify_ErrorMessageForEmailField()[pri:3, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:10 IST" name="TC003_verify_ErrorMessageForEmailField" finished-at="2025-03-18T12:14:11 IST" duration-ms="361" status="PASS">
+        <test-method signature="TC003_verify_ErrorMessageForEmailField()[pri:3, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="TC003_verify_ErrorMessageForEmailField" finished-at="2025-03-18T12:54:28 IST" duration-ms="369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_verify_ErrorMessageForEmailField -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:11 IST" name="tearDown" finished-at="2025-03-18T12:14:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="tearDown" finished-at="2025-03-18T12:54:28 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -486,7 +319,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:11 IST" name="beforeMethod" finished-at="2025-03-18T12:14:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="beforeMethod" finished-at="2025-03-18T12:54:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -497,11 +330,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC004_verify_ErrorMessageForPasswordField()[pri:4, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:11 IST" name="TC004_verify_ErrorMessageForPasswordField" finished-at="2025-03-18T12:14:11 IST" duration-ms="92" status="PASS">
+        <test-method signature="TC004_verify_ErrorMessageForPasswordField()[pri:4, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="TC004_verify_ErrorMessageForPasswordField" finished-at="2025-03-18T12:54:28 IST" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC004_verify_ErrorMessageForPasswordField -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:11 IST" name="tearDown" finished-at="2025-03-18T12:14:11 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="tearDown" finished-at="2025-03-18T12:54:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -512,11 +345,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="TC_005_verify_Login()[pri:5, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:11 IST" name="TC_005_verify_Login" finished-at="2025-03-18T12:14:16 IST" duration-ms="5021" status="PASS">
+        <test-method signature="TC_005_verify_Login()[pri:5, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="TC_005_verify_Login" finished-at="2025-03-18T12:54:34 IST" duration-ms="5152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_005_verify_Login -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:11 IST" name="beforeMethod" finished-at="2025-03-18T12:14:11 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:28 IST" name="beforeMethod" finished-at="2025-03-18T12:54:28 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -527,7 +360,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:16 IST" name="tearDown" finished-at="2025-03-18T12:14:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:34 IST" name="tearDown" finished-at="2025-03-18T12:54:34 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -538,7 +371,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:16 IST" name="beforeMethod" finished-at="2025-03-18T12:14:16 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:34 IST" name="beforeMethod" finished-at="2025-03-18T12:54:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -549,11 +382,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_006_LogoutFlow()[pri:6, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:16 IST" name="TC_006_LogoutFlow" finished-at="2025-03-18T12:14:19 IST" duration-ms="3479" status="PASS">
+        <test-method signature="TC_006_LogoutFlow()[pri:6, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:34 IST" name="TC_006_LogoutFlow" finished-at="2025-03-18T12:54:37 IST" duration-ms="3478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_006_LogoutFlow -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:19 IST" name="tearDown" finished-at="2025-03-18T12:14:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:37 IST" name="tearDown" finished-at="2025-03-18T12:54:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -564,7 +397,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:19 IST" name="beforeMethod" finished-at="2025-03-18T12:14:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:37 IST" name="beforeMethod" finished-at="2025-03-18T12:54:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -575,11 +408,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_007_reloginToBHL()[pri:7, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:19 IST" name="TC_007_reloginToBHL" finished-at="2025-03-18T12:14:24 IST" duration-ms="4595" status="PASS">
+        <test-method signature="TC_007_reloginToBHL()[pri:7, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:37 IST" name="TC_007_reloginToBHL" finished-at="2025-03-18T12:54:41 IST" duration-ms="4120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_007_reloginToBHL -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:24 IST" name="tearDown" finished-at="2025-03-18T12:14:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:54:41 IST" name="tearDown" finished-at="2025-03-18T12:54:41 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -590,7 +423,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:14:44 IST" name="afterSuite" finished-at="2025-03-18T12:14:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.BHL.TC001_LoginPageTest@d21a74c]" started-at="2025-03-18T12:55:14 IST" name="afterSuite" finished-at="2025-03-18T12:55:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

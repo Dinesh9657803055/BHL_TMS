@@ -119,8 +119,6 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 		Expected_Moudle_Approval_List.add("Reactivate Trips");	
 		Expected_Moudle_Approval_List.add("Refueling Log");
 	
-		System.out.println("Test");
-		System.out.println("Test");
 		return Expected_Moudle_Approval_List;
 	}
 
