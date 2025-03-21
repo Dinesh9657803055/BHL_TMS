@@ -143,7 +143,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC001_VerifySideBarMenuList() throws InterruptedException {
 		List<String> ActualSideMenuBarListing = Side.verifySideMenuBarListing().stream().map(String::toLowerCase).toList();
 		List<String> ExpectedSideMenuBarListing = ExpectedSideBarMenuListText().stream().map(String::toLowerCase).toList();		
-		Assert.assertEquals(ActualSideMenuBarListing, ExpectedSideMenuBarListing);		
+		soft.assertEquals(ActualSideMenuBarListing, ExpectedSideMenuBarListing);		
 		//BeforeAfterMethods.soft.assertEquals(ActualSideMenuBarListing, ExpectedSideMenuBarListing);
 		//ExtentManager.onTestPass("Verified Successfully - Side Menu Bar Listing");
 
@@ -153,7 +153,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC002_VerifyUserGroupList() throws InterruptedException {
 		List<String> ActualUserGroupListing = Side.VerifyUserGroupDropdownListing().stream().map(String::toLowerCase).toList();
 		List<String> ExpectedUserGroupListing = ExpectedUserGroupListText().stream().map(String::toLowerCase).toList();		
-		Assert.assertEquals(ActualUserGroupListing, ExpectedUserGroupListing);
+		soft.assertEquals(ActualUserGroupListing, ExpectedUserGroupListing);
 		//BeforeAfterMethods.soft.assertEquals(ActualUserGroupListing, ExpectedUserGroupListing); 
 		//	ExtentManager.onTestPass("Verified Successfully - Side Menu Bar Listing");
 	}
@@ -162,7 +162,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC003_VerifyUSerDatabasesListing() throws InterruptedException {
 		List<String> ActualListUserDatabases = Side.VerifyUserDatabasesListing().stream().map(String::toLowerCase).toList();
 		List<String> ExpectedListUserDatabases = ExpectedUserDatabasesText().stream().map(String::toLowerCase).toList();		
-		Assert.assertEquals(ActualListUserDatabases, ExpectedListUserDatabases);
+		soft.assertEquals(ActualListUserDatabases, ExpectedListUserDatabases);
 		//	ExtentManager.onTestPass("Verified Successfully - UserDatabasesListing");
 	}
 
@@ -170,7 +170,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC004_VerifyDatabasesListing() throws InterruptedException {
 		List<String> ActualDatabsesListing = Side.VerifyDatabasesListing().stream().map(String::toLowerCase).toList();
 		List<String> ExpectedDatabasesListing = ExpectedDatabasesText().stream().map(String::toLowerCase).toList();
-		Assert.assertEquals(ActualDatabsesListing, ExpectedDatabasesListing);
+		soft.assertEquals(ActualDatabsesListing, ExpectedDatabasesListing);
 		//	ExtentManager.onTestPass("Verified Successfully - Databases");
 	}
 
@@ -178,7 +178,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC005_Verify_DB_Approval() throws InterruptedException {
 		List<String> Expected_DB_ApprovalT_List = ExpectedDB_Approvals_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_DB_Approval_List = Side.VerifyDB_ApprovalListing().stream().map(String::toLowerCase).toList();
-		Assert.assertEquals(Actual_DB_Approval_List, Expected_DB_ApprovalT_List);
+		soft.assertEquals(Actual_DB_Approval_List, Expected_DB_ApprovalT_List);
 		//	ExtentManager.onTestPass("Verified Successfully - DB Approval Listing");
 	}
 
@@ -186,7 +186,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC006_Verify_Module_Approval() throws InterruptedException {
 		List<String> Expected_Module_Approval_List = Expected_Module_Approval_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_Module_Approval_List = Side.Verify_Module_Approval_Listing().stream().map(String::toLowerCase).toList();
-		Assert.assertEquals(Actual_Module_Approval_List, Expected_Module_Approval_List);
+		soft.assertEquals(Actual_Module_Approval_List, Expected_Module_Approval_List);
 		//	ExtentManager.onTestPass("Verified Successfully  - Module Approval Listing");
 	}
 
@@ -194,7 +194,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC007_Verify_Trip_Alert() throws InterruptedException {
 		List<String> Expected_Trip_Alert = Expected_TripAlert_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_Trip_Alert =Side.Verify_AlertDasboardListing().stream().map(String::toLowerCase).toList();
-		Assert.assertEquals(Actual_Trip_Alert, Expected_Trip_Alert);
+		soft.assertEquals(Actual_Trip_Alert, Expected_Trip_Alert);
 		//	ExtentManager.onTestPass("Veridfied Successfully - Trip Alert Listing");
 	}
 
@@ -202,7 +202,7 @@ public class TC002_DashboardPageTest extends BeforeAfterMethods {
 	public void TC008_Verify_Report() throws InterruptedException {
 		List<String> Expected_Report_Listing = Expected_ReportListing_Text().stream().map(String::toLowerCase).toList();
 		List<String> Actual_Report_Listing =  Side.VerifyReportListing().stream().map(String::toLowerCase).toList();
-		Assert.assertEquals(Actual_Report_Listing, Expected_Report_Listing);
+		soft.assertEquals(Actual_Report_Listing, Expected_Report_Listing);
 		//	ExtentManager.onTestPass("Verified Report Listing - Successfully");
 	}
 }

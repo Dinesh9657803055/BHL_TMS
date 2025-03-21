@@ -1,6 +1,7 @@
 package com.BHL;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -13,22 +14,23 @@ import report.ExtentManager;
 public class TC001_LoginPageTest extends BeforeAfterMethods {
 
 	login_Page login ;
-	SoftAssert soft ;
+	//SoftAssert soft ;
 	//SideBarMenu Side;
 
 	@BeforeClass
 	public void setUp() {
 		login  = new login_Page();
+		//soft = new SoftAssert();
 		//setup(); // driver 
 		//Side = new SideBarMenu();
 	}
 
-	//@BeforeMethod
+	@BeforeMethod
 	public void assertion() {
-		soft = new SoftAssert();
+		
 	}
 
-	//@AfterMethod
+	//@AfterClass
 	public void assertionAll() {
 		soft.assertAll();
 	}
@@ -36,7 +38,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 	@Test(priority = 1)
 	public void TC_001_verify_WelcomeText_On_LoginPage() {
 		String ActualText= login.Verify_Welcome_Text();
-		String ExpectedText = "Welcome to\r\n"
+		String ExpectedText = "Welcome t\r\n"
 				+ "BHL GROUP’S";
 		System.out.println(ActualText);
 
@@ -48,7 +50,8 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		// Now compare the normalized text
 		// Now compare the normalized text
 		// Now compare the normalized text
-		Assert.assertEquals(normalizedActual, normalizedExpected, "Welcome text is incorrect");
+		soft.assertEquals(ActualText, normalizedExpected, normalizedActual);
+		//Assert.assertEquals(normalizedActual, normalizedExpected, "Welcome text is incorrect");
 	//	ExtentManager.onTestPass("Verified Welcome text is Correct");
 	}
 
@@ -61,7 +64,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		System.out.println("Login Screen Actual Text :- " + ActualText);
 
 		// Now compare the normalized text
-		Assert.assertEquals(ActualText, ExpectedText, "Welcome text is incorrect");
+		soft.assertEquals(ActualText, ExpectedText, "Welcome text is incorrect");
 	//	ExtentManager.onTestPass("Verified LoginScreen text is Correct");
 		
 	}
@@ -71,7 +74,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		String ActualError =login.verifyErrorMessageForEmailId();
 		System.out.println("Error message for emial id : " + login.verifyErrorMessageForEmailId());
 		String ExpectedError ="Email is required";		
-		Assert.assertEquals(ActualError, ExpectedError);
+		soft.assertEquals(ActualError, ExpectedError);
 	//	ExtentManager.onTestPass("Verified Error Message is present for the Email field if it left blank");
 	}
 
@@ -80,7 +83,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		String ActualError =login.verifyErrorMessageForPassword();
 		System.out.println("Error message for emial id : " + login.verifyErrorMessageForPassword());
 		String ExpectedError ="Password is required";		
-		Assert.assertEquals(ActualError, ExpectedError);
+		soft.assertEquals(ActualError, ExpectedError);
 	//	ExtentManager.onTestPass("Verified Error Message is present for the Email field if it left blank");
 	}
 
@@ -94,7 +97,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		// Normalize line breaks (convert to consistent format)
 		String normalizedExpected = ExpectedText.replace("\r\n", "\n");
 		String normalizedActual = ActualText.replace("\r\n", "\n");	
-		Assert.assertEquals(normalizedActual, normalizedExpected);
+		soft.assertEquals(normalizedActual, normalizedExpected);
 	//	ExtentManager.onTestPass("Verified Username text is Correct with the which is logged in");
 	}
 
@@ -103,7 +106,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		String ActualText = login.Logout();
 		String expectedText = "TRANSPORT MANAGEMENT SYSTEM";	
 		System.out.println("Login Screen Text after logout : " + login.afterLogoutText.getText());
-		Assert.assertEquals(ActualText, expectedText);
+		soft.assertEquals(ActualText, expectedText);
 //		ExtentManager.onTestPass("Verified Logout is working fine and navigating user to the Login Screen");
 	}
 
@@ -117,7 +120,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		// Normalize line breaks (convert to consistent format)
 		String normalizedExpected = ExpectedText.replace("\r\n", "\n");
 		String normalizedActual = ActualText.replace("\r\n", "\n");	
-		Assert.assertEquals(normalizedActual, normalizedExpected);
+		soft.assertEquals(normalizedActual, normalizedExpected);
 	//	ExtentManager.onTestPass("Verified Username text is Correct with the which is logged in again after the logout");
 	}
 }

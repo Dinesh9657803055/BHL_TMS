@@ -16,11 +16,12 @@ import test_base.BaseClass;
 public class BeforeAfterMethods extends BaseClass {
 
 	//public static SoftAssert soft ;
-	
+	SoftAssert soft ;
 	@BeforeSuite
 	public void beforeSuitMethod() {
+		
 	//	ExtentManager.onStart();
-		//soft = new SoftAssert();
+		soft = new SoftAssert();
 	}
 
 	@BeforeTest
@@ -62,6 +63,7 @@ public class BeforeAfterMethods extends BaseClass {
 
 	@AfterSuite
 	public void afterSuite() {
+			soft.assertAll();
 		/*try {
 			soft.assertAll();
 		}

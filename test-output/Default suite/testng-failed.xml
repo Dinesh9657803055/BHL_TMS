@@ -6,15 +6,15 @@
       <class name="com.BHL.TC001_LoginPageTest">
         <methods>
           <include name="TC_002_verify_Login_Button_Clickable"/>
-          <include name="TC_001_verify_WelcomeText_On_LoginPage"/>
           <include name="tearDown"/>
           <include name="TC_005_verify_Login"/>
-          <include name="teardown"/>
+          <include name="assertionAll"/>
+          <include name="assertion"/>
           <include name="setUp"/>
-          <include name="setup"/>
           <include name="beforeTest"/>
-          <include name="afterSuite"/>
+          <include name="setup"/>
           <include name="TC_007_reloginToBHL"/>
+          <include name="afterSuite"/>
           <include name="TC003_verify_ErrorMessageForEmailField"/>
           <include name="beforeSuitMethod"/>
           <include name="TC004_verify_ErrorMessageForPasswordField"/>
