@@ -6,13 +6,14 @@
       <class name="com.BHL.TC001_LoginPageTest">
         <methods>
           <include name="assertion"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="TC_005_verify_Login"/>
           <include name="beforeTest"/>
           <include name="setup"/>
-          <include name="TC_007_reloginToBHL"/>
           <include name="afterSuite"/>
+          <include name="TC_007_reloginToBHL"/>
+          <include name="TC_008_Logout"/>
           <include name="beforeSuitMethod"/>
           <include name="beforeMethod"/>
           <include name="TC_006_LogoutFlow"/>

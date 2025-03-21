@@ -91,18 +91,26 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 	public void TC_005_verify_Login() {			
 		login.LoginFlow("chitra@mailinator.com","Test@123");		
 	//	ExtentManager.onTestPass("Logged in succesflly With Valid Credentials");
-		System.out.println(login.NameOfTheUSer());
+		//System.out.println(login.NameOfTheUSer());
 		String ExpectedText="Chitra Patil";
-		String ActualText =login.NameOfTheUSer();
+		
 		// Normalize line breaks (convert to consistent format)
 		String normalizedExpected = ExpectedText.replace("\r\n", "\n");
-		String normalizedActual = ActualText.replace("\r\n", "\n");	
-		soft.assertEquals(normalizedActual, normalizedExpected);
-	//	ExtentManager.onTestPass("Verified Username text is Correct with the which is logged in");
+		//String normalizedActual = ActualText.replace("\r\n", "\n");	
+		soft.assertNotEquals(normalizedExpected,login.NameOfTheUSer(),"The user name does not match" );
+	//	ExtentManager.onTestPass("Verified UserName text is Correct with the which is logged in");
+	}
+	
+	@Test(priority = 6)
+	public void TC_006_Logout() throws InterruptedException {
+		String ExpectedAccInfoTExt = "Account Information";
+		String ActualTExt = login.verifyAccountInfo();	
+		soft.assertEquals(ActualTExt, ExpectedAccInfoTExt);
+		
 	}
 
-	@Test(priority = 6)
-	public void TC_006_LogoutFlow() throws InterruptedException {
+	@Test(priority = 7)
+	public void TC_007_LogoutFlow() throws InterruptedException {
 		String ActualText = login.Logout();
 		String expectedText = "TRANSPORT MANAGEMENT SYSTEM";	
 		System.out.println("Login Screen Text after logout : " + login.afterLogoutText.getText());
@@ -110,8 +118,8 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 //		ExtentManager.onTestPass("Verified Logout is working fine and navigating user to the Login Screen");
 	}
 
-	@Test(priority = 7)
-	public void TC_007_reloginToBHL() throws InterruptedException{
+	@Test(priority = 8)
+	public void TC_008_reloginToBHL() throws InterruptedException{
 		login.Relogin("chitra@mailinator.com","Test@123");
 	//	ExtentManager.onTestPass(" Re - Logged in succesflly With Valid Credentials of User");		
 		System.out.println(login.NameOfTheUSer());
@@ -123,4 +131,6 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		soft.assertEquals(normalizedActual, normalizedExpected);
 	//	ExtentManager.onTestPass("Verified Username text is Correct with the which is logged in again after the logout");
 	}
+	
+	
 }

@@ -5,19 +5,14 @@
     <classes>
       <class name="com.BHL.TC001_LoginPageTest">
         <methods>
-          <include name="TC_002_verify_Login_Button_Clickable"/>
-          <include name="tearDown"/>
-          <include name="TC_005_verify_Login"/>
-          <include name="assertionAll"/>
           <include name="assertion"/>
           <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="beforeTest"/>
           <include name="setup"/>
           <include name="TC_007_reloginToBHL"/>
           <include name="afterSuite"/>
-          <include name="TC003_verify_ErrorMessageForEmailField"/>
           <include name="beforeSuitMethod"/>
-          <include name="TC004_verify_ErrorMessageForPasswordField"/>
           <include name="beforeMethod"/>
           <include name="TC_006_LogoutFlow"/>
         </methods>
