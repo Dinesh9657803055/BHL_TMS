@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">15 methods, 1 failed,  2 skipped,  12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BHL.TC001_LoginPageTest" class="method navigator-link" hash-for-method="TC_005_verify_Login">TC_005_verify_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BHL.TC001_LoginPageTest" class="method navigator-link" hash-for-method="TC_006_LogoutFlow">TC_006_LogoutFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BHL.TC001_LoginPageTest" class="method navigator-link" hash-for-method="TC_007_reloginToBHL">TC_007_reloginToBHL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -161,21 +194,6 @@
                         <a href="#" panel-name="suite-Suite" title="com.BHL.TC001_LoginPageTest" class="method navigator-link" hash-for-method="TC_002_verify_Login_Button_Clickable">TC_002_verify_Login_Button_Clickable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BHL.TC001_LoginPageTest" class="method navigator-link" hash-for-method="TC_005_verify_Login">TC_005_verify_Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BHL.TC001_LoginPageTest" class="method navigator-link" hash-for-method="TC_006_LogoutFlow">TC_006_LogoutFlow</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BHL.TC001_LoginPageTest" class="method navigator-link" hash-for-method="TC_007_reloginToBHL">TC_007_reloginToBHL</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -188,6 +206,90 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.BHL.TC001_LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_005_verify_Login">
+                  </a> <!-- TC_005_verify_Login -->
+                  <span class="method-name">TC_005_verify_Login</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //p[@class=&quot;MuiTypography-root MuiTypography-body1 css-1ewjb641&quot;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at test_utility.ReusableMethods.explicitWait(ReusableMethods.java:23)
+	at pom_Pages.login_Page.NameOfTheUSer(login_Page.java:110)
+	at com.BHL.TC001_LoginPageTest.TC_005_verify_Login(TC001_LoginPageTest.java:94)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&quot;MuiTypography-root MuiTypography-body1 css-1ewjb641&quot;]&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eed586d7fa8a07ab8477d0ab76f983f4, findElement {using=xpath, value=//p[@class=&quot;MuiTypography-root MuiTypography-body1 css-1ewjb641&quot;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.90 (219ee74681fc..., userDataDir: C:\Users\Dinesh\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64902}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64902/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eed586d7fa8a07ab8477d0ab76f983f4
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 29 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.BHL.TC001_LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_006_LogoutFlow">
+                  </a> <!-- TC_006_LogoutFlow -->
+                  <span class="method-name">TC_006_LogoutFlow</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //p[@class=&quot;MuiTypography-root MuiTypography-body1 css-1ewjb641&quot;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_007_reloginToBHL">
+                  </a> <!-- TC_007_reloginToBHL -->
+                  <span class="method-name">TC_007_reloginToBHL</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //p[@class=&quot;MuiTypography-root MuiTypography-body1 css-1ewjb641&quot;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at com.BHL.BeforeAfterMethods.tearDown(BeforeAfterMethods.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -220,27 +322,6 @@
                   <a name="TC_002_verify_Login_Button_Clickable">
                   </a> <!-- TC_002_verify_Login_Button_Clickable -->
                   <span class="method-name">TC_002_verify_Login_Button_Clickable</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_005_verify_Login">
-                  </a> <!-- TC_005_verify_Login -->
-                  <span class="method-name">TC_005_verify_Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_006_LogoutFlow">
-                  </a> <!-- TC_006_LogoutFlow -->
-                  <span class="method-name">TC_006_LogoutFlow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_007_reloginToBHL">
-                  </a> <!-- TC_007_reloginToBHL -->
-                  <span class="method-name">TC_007_reloginToBHL</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -364,70 +445,70 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(15);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC004_VerifyDatabasesListing')
-data.setCell(0, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(0, 3, 6635);
+data.setCell(0, 1, 'TC_005_verify_Login')
+data.setCell(0, 2, 'com.BHL.TC001_LoginPageTest')
+data.setCell(0, 3, 30799);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC003_VerifyUSerDatabasesListing')
+data.setCell(1, 1, 'TC004_VerifyDatabasesListing')
 data.setCell(1, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(1, 3, 5392);
+data.setCell(1, 3, 6632);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_005_verify_Login')
-data.setCell(2, 2, 'com.BHL.TC001_LoginPageTest')
-data.setCell(2, 3, 5100);
+data.setCell(2, 1, 'TC003_VerifyUSerDatabasesListing')
+data.setCell(2, 2, 'com.BHL.TC002_DashboardPageTest')
+data.setCell(2, 3, 5404);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC005_Verify_DB_Approval')
+data.setCell(3, 1, 'TC006_Verify_Module_Approval')
 data.setCell(3, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(3, 3, 4433);
+data.setCell(3, 3, 4400);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC006_Verify_Module_Approval')
+data.setCell(4, 1, 'TC008_Verify_Report')
 data.setCell(4, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(4, 3, 4415);
+data.setCell(4, 3, 4365);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC008_Verify_Report')
+data.setCell(5, 1, 'TC007_Verify_Trip_Alert')
 data.setCell(5, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(5, 3, 4341);
+data.setCell(5, 3, 4322);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC007_Verify_Trip_Alert')
+data.setCell(6, 1, 'TC005_Verify_DB_Approval')
 data.setCell(6, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(6, 3, 4294);
+data.setCell(6, 3, 4273);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_007_reloginToBHL')
-data.setCell(7, 2, 'com.BHL.TC001_LoginPageTest')
-data.setCell(7, 3, 3613);
+data.setCell(7, 1, 'TC002_VerifyUserGroupList')
+data.setCell(7, 2, 'com.BHL.TC002_DashboardPageTest')
+data.setCell(7, 3, 2266);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_006_LogoutFlow')
+data.setCell(8, 1, 'TC_002_verify_Login_Button_Clickable')
 data.setCell(8, 2, 'com.BHL.TC001_LoginPageTest')
-data.setCell(8, 3, 3395);
+data.setCell(8, 3, 1376);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC002_VerifyUserGroupList')
-data.setCell(9, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(9, 3, 2272);
+data.setCell(9, 1, 'TC003_verify_ErrorMessageForEmailField')
+data.setCell(9, 2, 'com.BHL.TC001_LoginPageTest')
+data.setCell(9, 3, 459);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_002_verify_Login_Button_Clickable')
+data.setCell(10, 1, 'TC004_verify_ErrorMessageForPasswordField')
 data.setCell(10, 2, 'com.BHL.TC001_LoginPageTest')
-data.setCell(10, 3, 1384);
+data.setCell(10, 3, 121);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC003_verify_ErrorMessageForEmailField')
-data.setCell(11, 2, 'com.BHL.TC001_LoginPageTest')
-data.setCell(11, 3, 399);
+data.setCell(11, 1, 'TC001_VerifySideBarMenuList')
+data.setCell(11, 2, 'com.BHL.TC002_DashboardPageTest')
+data.setCell(11, 3, 120);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC004_verify_ErrorMessageForPasswordField')
+data.setCell(12, 1, 'TC_001_verify_WelcomeText_On_LoginPage')
 data.setCell(12, 2, 'com.BHL.TC001_LoginPageTest')
-data.setCell(12, 3, 130);
+data.setCell(12, 3, 73);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC001_VerifySideBarMenuList')
-data.setCell(13, 2, 'com.BHL.TC002_DashboardPageTest')
-data.setCell(13, 3, 105);
+data.setCell(13, 1, 'TC_006_LogoutFlow')
+data.setCell(13, 2, 'com.BHL.TC001_LoginPageTest')
+data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC_001_verify_WelcomeText_On_LoginPage')
+data.setCell(14, 1, 'TC_007_reloginToBHL')
 data.setCell(14, 2, 'com.BHL.TC001_LoginPageTest')
-data.setCell(14, 3, 90);
+data.setCell(14, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -448,11 +529,11 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.BHL.TC002_DashboardPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">afterSuite</span>
+                <span class="ignored-method-name">beforeTest</span>
                 <br/>
                 <span class="ignored-method-name">beforeSuitMethod</span>
                 <br/>
-                <span class="ignored-method-name">beforeTest</span>
+                <span class="ignored-method-name">afterSuite</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -471,240 +552,230 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">373 ms</span>
+                <span class="method-start">378 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">402 ms</span>
+                <span class="method-start">406 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7303 ms</span>
+                <span class="method-start">6923 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_001_verify_WelcomeText_On_Login...)</span>
-                <span class="method-start">7371 ms</span>
+                <span class="method-start">6996 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">assertion</span>
-                <span class="method-start">7381 ms</span>
+                <span class="method-start">6999 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_001_verify_WelcomeText_On_LoginPage</span>
-                <span class="method-start">7383 ms</span>
+                <span class="method-start">7000 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC_001_verify_WelcomeText_On_LoginPage status=SUCCESS method=TC001_LoginPageTest.TC...)</span>
-                <span class="method-start">7492 ms</span>
+                <span class="method-start">7089 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_002_verify_Login_Button_Clickab...)</span>
-                <span class="method-start">7499 ms</span>
+                <span class="method-start">7093 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">assertion</span>
-                <span class="method-start">7501 ms</span>
+                <span class="method-start">7095 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_002_verify_Login_Button_Clickable</span>
-                <span class="method-start">7502 ms</span>
+                <span class="method-start">7096 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC_002_verify_Login_Button_Clickable status=SUCCESS method=TC001_LoginPageTest.TC_0...)</span>
-                <span class="method-start">8891 ms</span>
+                <span class="method-start">8475 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC003_verify_ErrorMessageForEmailF...)</span>
-                <span class="method-start">8893 ms</span>
+                <span class="method-start">8476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">assertion</span>
+                <span class="method-start">8478 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC003_verify_ErrorMessageForEmailField</span>
-                <span class="method-start">8894 ms</span>
+                <span class="method-start">8479 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">assertion</span>
-                <span class="method-start">8894 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC003_verify_ErrorMessageForEmailField status=SUCCESS method=TC001_LoginPageTest.TC...)</span>
-                <span class="method-start">9296 ms</span>
+                <span class="method-start">8946 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC004_verify_ErrorMessageForPasswo...)</span>
-                <span class="method-start">9306 ms</span>
+                <span class="method-start">8949 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">assertion</span>
-                <span class="method-start">9308 ms</span>
+                <span class="method-start">8950 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC004_verify_ErrorMessageForPasswordField</span>
-                <span class="method-start">9310 ms</span>
+                <span class="method-start">8951 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC004_verify_ErrorMessageForPasswordField status=SUCCESS method=TC001_LoginPageTest...)</span>
-                <span class="method-start">9442 ms</span>
+                <span class="method-start">9075 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_005_verify_Login()[pri:5, insta...)</span>
-                <span class="method-start">9443 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">assertion</span>
-                <span class="method-start">9444 ms</span>
+                <span class="method-start">9076 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_005_verify_Login</span>
-                <span class="method-start">9444 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=TC_005_verify_Login status=SUCCESS method=TC001_LoginPageTest.TC_005_verify_Login()...)</span>
-                <span class="method-start">14546 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_006_LogoutFlow()[pri:6, instanc...)</span>
-                <span class="method-start">14547 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_006_LogoutFlow</span>
-                <span class="method-start">14548 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">assertion</span>
-                <span class="method-start">14548 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=TC_006_LogoutFlow status=SUCCESS method=TC001_LoginPageTest.TC_006_LogoutFlow()[pri...)</span>
-                <span class="method-start">17947 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC001_LoginPageTest.TC_007_reloginToBHL()[pri:7, insta...)</span>
-                <span class="method-start">17948 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">assertion</span>
-                <span class="method-start">17949 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_007_reloginToBHL</span>
-                <span class="method-start">17950 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=TC_007_reloginToBHL status=SUCCESS method=TC001_LoginPageTest.TC_007_reloginToBHL()...)</span>
-                <span class="method-start">21565 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">assertionAll</span>
-                <span class="method-start">21566 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-name">TC_005_verify_Login</span>
+                <span class="method-start">9080 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">assertion</span>
+                <span class="method-start">9080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown([TestResult name=TC_005_verify_Login status=FAILURE method=TC001_LoginPageTest.TC_005_verify_Login()...)</span>
+                <span class="method-start">40104 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">40106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">assertion</span>
+                <span class="method-start">40108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40125 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">40130 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">assertion</span>
+                <span class="method-start">40132 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40147 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BHL.TC002_DashboardPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
-                <span class="method-start">21574 ms</span>
+                <span class="method-start">40154 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">21575 ms</span>
+                <span class="method-start">40155 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">TC001_VerifySideBarMenuList</span>
-                <span class="method-start">21596 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC001_VerifySideBarMenuList()[...)</span>
-                <span class="method-start">21596 ms</span>
+                <span class="method-start">40176 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC001_VerifySideBarMenuList</span>
+                <span class="method-start">40177 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC001_VerifySideBarMenuList status=SUCCESS method=TC002_DashboardPageTest.TC001_Ver...)</span>
-                <span class="method-start">21702 ms</span>
+                <span class="method-start">40299 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC002_VerifyUserGroupList()[pr...)</span>
-                <span class="method-start">21703 ms</span>
+                <span class="method-start">40302 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC002_VerifyUserGroupList</span>
-                <span class="method-start">21704 ms</span>
+                <span class="method-start">40303 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC002_VerifyUserGroupList status=SUCCESS method=TC002_DashboardPageTest.TC002_Verif...)</span>
-                <span class="method-start">23980 ms</span>
+                <span class="method-start">42570 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC003_VerifyUSerDatabasesListi...)</span>
-                <span class="method-start">23981 ms</span>
+                <span class="method-start">42572 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC003_VerifyUSerDatabasesListing</span>
-                <span class="method-start">23982 ms</span>
+                <span class="method-start">42573 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC003_VerifyUSerDatabasesListing status=SUCCESS method=TC002_DashboardPageTest.TC00...)</span>
-                <span class="method-start">29378 ms</span>
+                <span class="method-start">47981 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC004_VerifyDatabasesListing()...)</span>
-                <span class="method-start">29382 ms</span>
+                <span class="method-start">47988 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC004_VerifyDatabasesListing</span>
-                <span class="method-start">29383 ms</span>
+                <span class="method-start">47988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC004_VerifyDatabasesListing status=SUCCESS method=TC002_DashboardPageTest.TC004_Ve...)</span>
-                <span class="method-start">36021 ms</span>
+                <span class="method-start">54626 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC005_Verify_DB_Approval()[pri...)</span>
-                <span class="method-start">36022 ms</span>
+                <span class="method-start">54628 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC005_Verify_DB_Approval</span>
-                <span class="method-start">36023 ms</span>
+                <span class="method-start">54629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC005_Verify_DB_Approval status=SUCCESS method=TC002_DashboardPageTest.TC005_Verify...)</span>
-                <span class="method-start">40459 ms</span>
+                <span class="method-start">58904 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC006_Verify_Module_Approval()...)</span>
-                <span class="method-start">40465 ms</span>
+                <span class="method-start">58908 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC006_Verify_Module_Approval</span>
-                <span class="method-start">40465 ms</span>
+                <span class="method-start">58909 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC006_Verify_Module_Approval status=SUCCESS method=TC002_DashboardPageTest.TC006_Ve...)</span>
-                <span class="method-start">44885 ms</span>
+                <span class="method-start">63311 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC007_Verify_Trip_Alert()[pri:...)</span>
-                <span class="method-start">44888 ms</span>
+                <span class="method-start">63319 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC007_Verify_Trip_Alert</span>
-                <span class="method-start">44889 ms</span>
+                <span class="method-start">63320 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC007_Verify_Trip_Alert status=SUCCESS method=TC002_DashboardPageTest.TC007_Verify_...)</span>
-                <span class="method-start">49186 ms</span>
+                <span class="method-start">67643 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">TC008_Verify_Report</span>
-                <span class="method-start">49191 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=TC002_DashboardPageTest.TC008_Verify_Report()[pri:8, i...)</span>
-                <span class="method-start">49191 ms</span>
+                <span class="method-start">67645 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC008_Verify_Report</span>
+                <span class="method-start">67645 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=TC008_Verify_Report status=SUCCESS method=TC002_DashboardPageTest.TC008_Verify_Repo...)</span>
-                <span class="method-start">53534 ms</span>
+                <span class="method-start">72013 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

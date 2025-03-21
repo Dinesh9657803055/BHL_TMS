@@ -3,21 +3,21 @@
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="MyTest(failed)">
     <classes>
-      <class name="com.BHL.TC002_DashboardPageTest">
+      <class name="com.BHL.TC001_LoginPageTest">
         <methods>
-          <include name="setUp"/>
-          <include name="TC007_Verify_Trip_Alert"/>
+          <include name="assertion"/>
           <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="TC_005_verify_Login"/>
           <include name="beforeTest"/>
+          <include name="setup"/>
+          <include name="TC_007_reloginToBHL"/>
           <include name="afterSuite"/>
-          <include name="TC008_Verify_Report"/>
           <include name="beforeSuitMethod"/>
-          <include name="TC006_Verify_Module_Approval"/>
           <include name="beforeMethod"/>
-          <include name="TC005_Verify_DB_Approval"/>
+          <include name="TC_006_LogoutFlow"/>
         </methods>
-      </class> <!-- com.BHL.TC002_DashboardPageTest -->
+      </class> <!-- com.BHL.TC001_LoginPageTest -->
     </classes>
   </test> <!-- MyTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

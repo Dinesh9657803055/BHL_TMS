@@ -21,7 +21,7 @@ public class BeforeAfterMethods extends BaseClass {
 	public void beforeSuitMethod() {
 		
 	//	ExtentManager.onStart();
-		soft = new SoftAssert();
+		
 	}
 
 	@BeforeTest
@@ -31,6 +31,7 @@ public class BeforeAfterMethods extends BaseClass {
 
 	@BeforeClass 
 	public  void setup() {	
+		soft = new SoftAssert();
 		if (driver == null) {
 			driverSetup(); 
 		}		
@@ -38,6 +39,7 @@ public class BeforeAfterMethods extends BaseClass {
 
 	@BeforeMethod
 	public void beforeMethod(ITestResult result) {
+		//soft = new SoftAssert();
 	//	ExtentManager.onTestSuccess(result.getMethod().getMethodName());		
 	}
 	
@@ -49,6 +51,7 @@ public class BeforeAfterMethods extends BaseClass {
 
 	@AfterMethod
 	public void tearDown(ITestResult result) {
+		
 		if (result.getStatus() == ITestResult.FAILURE) {
 			//ExtentManager.onTestFailure(result.getMethod().getMethodName());
 	//		ExtentManager.onTestFailure(result);
@@ -57,13 +60,13 @@ public class BeforeAfterMethods extends BaseClass {
 	//		ExtentManager.onTestSkipped(result.getMethod().getMethodName());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 		}	
-	
+		
 		//driver.close();
 	}
 
 	@AfterSuite
 	public void afterSuite() {
-			soft.assertAll();
+		soft.assertAll();
 		/*try {
 			soft.assertAll();
 		}
