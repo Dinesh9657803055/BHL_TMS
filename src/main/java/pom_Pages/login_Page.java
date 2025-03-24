@@ -23,7 +23,7 @@ public class login_Page extends BaseClass {
 	private WebElement Password;
 	@FindBy(id = ":r3:")
 	private WebElement ClickLoginButton;
-	@FindBy(xpath = "//p[@class=\"MuiTypography-root MuiTypography-body1 css-1ewjb641\"]")
+	@FindBy(xpath = "//p[@class=\"MuiTypography-root MuiTypography-body1 css-1ewjb64\"]")
 	public WebElement NameOfUSer;
 	@FindBy(xpath = "//p[text()='Log out']")
 	private WebElement LogoutButton;

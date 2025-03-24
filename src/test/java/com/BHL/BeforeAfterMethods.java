@@ -59,6 +59,7 @@ public class BeforeAfterMethods extends BaseClass {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 	//		ExtentManager.onTestSkipped(result.getMethod().getMethodName());
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
+		
 		}	
 		
 		//driver.close();

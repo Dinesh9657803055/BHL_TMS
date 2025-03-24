@@ -24,31 +24,18 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 		//setup(); // driver 
 		//Side = new SideBarMenu();
 	}
-
-	@BeforeMethod
-	public void assertion() {
-		
-	}
-
-	//@AfterClass
-	public void assertionAll() {
-		soft.assertAll();
-	}
-
+	
 	@Test(priority = 1)
 	public void TC_001_verify_WelcomeText_On_LoginPage() {
 		String ActualText= login.Verify_Welcome_Text();
-		String ExpectedText = "Welcome t\r\n"
+		String ExpectedText = "Welcome to\r\n"
 				+ "BHL GROUP’S";
 		System.out.println(ActualText);
 
 		// Normalize line breaks (convert to consistent format)
 		String normalizedExpected = ExpectedText.replace("\r\n", "\n");
 		String normalizedActual = ActualText.replace("\r\n", "\n");
-
-		// Now compare the normalized text
-		// Now compare the normalized text
-		// Now compare the normalized text
+		
 		// Now compare the normalized text
 		soft.assertEquals(ActualText, normalizedExpected, normalizedActual);
 		//Assert.assertEquals(normalizedActual, normalizedExpected, "Welcome text is incorrect");
@@ -121,7 +108,7 @@ public class TC001_LoginPageTest extends BeforeAfterMethods {
 	@Test(priority = 8)
 	public void TC_008_reloginToBHL() throws InterruptedException{
 		login.Relogin("chitra@mailinator.com","Test@123");
-	//	ExtentManager.onTestPass(" Re - Logged in succesflly With Valid Credentials of User");		
+	//	ExtentManager.onTestPass(" Re - Logged in successfully With Valid Credentials of User");		
 		System.out.println(login.NameOfTheUSer());
 		String ExpectedText="Chitra Patil";
 		String ActualText =login.NameOfTheUSer();
