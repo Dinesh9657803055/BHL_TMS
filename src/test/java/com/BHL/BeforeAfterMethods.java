@@ -34,6 +34,7 @@ public class BeforeAfterMethods extends BaseClass {
 		soft = new SoftAssert();
 		if (driver == null) {
 			driverSetup(); 
+			
 		}		
 	}
 
