@@ -11,7 +11,7 @@ import test_utility.ReusableMethods;
 
 public class SideBarMenu extends BaseClass {
 	@FindBy(xpath = "//div[@role=\"button\"]//div[@class=\"MuiListItemText-root css-16j75na\"]") private List<WebElement> SideMenuListing;
-	@FindBy(xpath = "//div[text()=\"User Groups\"]") private WebElement UserGroupDropdown;
+	@FindBy(xpath = "//div[text()=\"User Groups\"]") protected  WebElement UserGroupDropdown;
 	@FindBy(xpath = "//div[@class=\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr\"]//div[@class=\"MuiListItemText-root css-1tsvksn\"]") private List<WebElement> UserGroupsListing;
 	@FindBy(xpath = "//div[text()=\"Databases\"]") private WebElement DatabasesDropdown;
 	@FindBy(xpath = "//div[@class=\"MuiCollapse-root MuiCollapse-vertical MuiCollapse-entered css-c4sutr\"]//div[@class=\"MuiListItemText-root css-1tsvksn\"]") private List<WebElement> DatabasesListing;
@@ -55,6 +55,12 @@ public class SideBarMenu extends BaseClass {
 		}
 		UserGroupDropdown.click();
 		return UserGroupList;
+	}
+	
+	public void  VerifyUserGroupDropdownListing2() throws InterruptedException {
+		ReusableMethods.explicitWait(UserGroupDropdown);
+		UserGroupDropdown.click();
+		Thread.sleep(2000);
 	}
 
 	//verify the User Databases Drop down Listing which have 4 Options 
@@ -115,6 +121,7 @@ public class SideBarMenu extends BaseClass {
 		for (WebElement ele :ModuleApprovalListing ){
 			ModuleApprobalText.add(ele.getText());
 		}
+		System.out.println("Module Approval; Listinig is : "+ ModuleApprobalText);
 		ModuleApproval.click();
 		return ModuleApprobalText;
 	}

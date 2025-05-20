@@ -21,6 +21,7 @@ public class ReusableMethods extends BaseClass {
 	public static void explicitWait(WebElement ele) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(ele));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	public static void explicitWaitForClick(WebElement ele) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
